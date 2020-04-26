@@ -14,6 +14,9 @@
 		7C49DFC224488F980003C62E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C49DFC124488F980003C62E /* Assets.xcassets */; };
 		7C49DFC524488F980003C62E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C49DFC324488F980003C62E /* LaunchScreen.storyboard */; };
 		7C49DFC824488F980003C62E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C49DFC724488F980003C62E /* main.m */; };
+		7C49DFCF244891B40003C62E /* apps.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C49DFCE244891B40003C62E /* apps.plist */; };
+		7C49DFD22448980A0003C62E /* AppsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C49DFD12448980A0003C62E /* AppsModel.m */; };
+		7C8FBDA824556C94004744CD /* Start.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C8FBDA724556C94004744CD /* Start.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,11 @@
 		7C49DFC424488F980003C62E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7C49DFC624488F980003C62E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7C49DFC724488F980003C62E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7C49DFCE244891B40003C62E /* apps.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = apps.plist; sourceTree = "<group>"; };
+		7C49DFD02448980A0003C62E /* AppsModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppsModel.h; sourceTree = "<group>"; };
+		7C49DFD12448980A0003C62E /* AppsModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppsModel.m; sourceTree = "<group>"; };
+		7C8FBDA624556C94004744CD /* Start.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Start.h; sourceTree = "<group>"; };
+		7C8FBDA724556C94004744CD /* Start.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Start.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,11 +75,16 @@
 				7C49DFB924488F940003C62E /* SceneDelegate.m */,
 				7C49DFBB24488F940003C62E /* ViewController.h */,
 				7C49DFBC24488F940003C62E /* ViewController.m */,
+				7C49DFD02448980A0003C62E /* AppsModel.h */,
+				7C49DFD12448980A0003C62E /* AppsModel.m */,
 				7C49DFBE24488F940003C62E /* Main.storyboard */,
 				7C49DFC124488F980003C62E /* Assets.xcassets */,
 				7C49DFC324488F980003C62E /* LaunchScreen.storyboard */,
+				7C49DFCE244891B40003C62E /* apps.plist */,
 				7C49DFC624488F980003C62E /* Info.plist */,
 				7C49DFC724488F980003C62E /* main.m */,
+				7C8FBDA624556C94004744CD /* Start.h */,
+				7C8FBDA724556C94004744CD /* Start.m */,
 			);
 			path = "多图下载综合案例";
 			sourceTree = "<group>";
@@ -133,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C49DFCF244891B40003C62E /* apps.plist in Resources */,
 				7C49DFC524488F980003C62E /* LaunchScreen.storyboard in Resources */,
 				7C49DFC224488F980003C62E /* Assets.xcassets in Resources */,
 				7C49DFC024488F940003C62E /* Main.storyboard in Resources */,
@@ -146,7 +160,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C8FBDA824556C94004744CD /* Start.m in Sources */,
 				7C49DFBD24488F940003C62E /* ViewController.m in Sources */,
+				7C49DFD22448980A0003C62E /* AppsModel.m in Sources */,
 				7C49DFB724488F940003C62E /* AppDelegate.m in Sources */,
 				7C49DFC824488F980003C62E /* main.m in Sources */,
 				7C49DFBA24488F940003C62E /* SceneDelegate.m in Sources */,
@@ -225,7 +241,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +293,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,14 +306,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RW447KF8J;
 				INFOPLIST_FILE = "多图下载综合案例/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zcc.syncThread.--------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -306,14 +324,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8RW447KF8J;
 				INFOPLIST_FILE = "多图下载综合案例/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.zcc.syncThread.--------";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
